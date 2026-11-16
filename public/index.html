@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3efe5">
+  <meta name="description" content="澳门回归主题手书的全天实地拍摄路线。逐站导航、逐项勾选，拍摄进度保存在本机。">
+  <title>澳门回归 · 拍摄清单</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="lane">
+      <p class="kicker">澳门回归</p>
+      <h1>拍摄清单</h1>
+      <p class="route-description">新口岸 → 南湾 → 新马路 → 内港 → 塔石 → 关闸</p>
+      <p class="route-meta">09:30–17:30 <span aria-hidden="true">·</span> <span id="stop-count">11 站</span></p>
+    </div>
+  </header>
+  <div class="progress-bar" id="progress-bar" hidden>
+    <div class="lane progress-layout">
+      <span class="progress-label" id="progress-label" aria-live="polite"></span>
+      <progress id="progress" aria-label="拍摄进度"></progress>
+      <button class="next-button" type="button" id="next-item">下一项 <span aria-hidden="true">↓</span></button>
+    </div>
+  </div>
+  <main class="lane" id="main">
+    <p class="storage-note" id="storage-note" hidden>这个浏览器无法保存进度，请在走拍时保持此页面打开。</p>
+    <noscript><p>请启用 JavaScript 以使用拍摄清单。</p></noscript>
+    <div id="itinerary"></div>
+    <footer class="field-notes">
+      <h2>出发前</h2>
+      <p>两处馆舍都想进的话，优先选普通工作日的周二至周五。贺礼陈列馆 10:00 开门，通常周一闭馆。进馆先看拍摄标识。档案馆如需调档，先问阅览室。</p>
+      <p><a href="https://www.icm.gov.mo/handovermuseum/gb/detail/5" target="_blank" rel="noopener noreferrer">陈列馆开放时间</a><a href="https://www.gov.mo/zh-hans/services/ps-2285/faqs/" target="_blank" rel="noopener noreferrer">档案馆阅览时间</a></p>
+      <p>勾选进度保存在当前浏览器。</p>
+    </footer>
+  </main>
+</body>
+</html>
